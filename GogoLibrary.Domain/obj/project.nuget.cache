@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VHvnc9k4qRo=",
+  "dgSpecHash": "9NtcM/o0fSg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.Domain\\GogoLibrary.Domain.csproj",
+  "projectFilePath": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.Domain\\GogoLibrary.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\madoh\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
     "C:\\Users\\madoh\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0\\microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",

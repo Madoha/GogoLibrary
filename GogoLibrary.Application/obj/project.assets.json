@@ -1114,11 +1114,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.Application\\GogoLibrary.Application.csproj",
+      "projectUniqueName": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.Application\\GogoLibrary.Application.csproj",
       "projectName": "GogoLibrary.Application",
-      "projectPath": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.Application\\GogoLibrary.Application.csproj",
+      "projectPath": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.Application\\GogoLibrary.Application.csproj",
       "packagesPath": "C:\\Users\\madoh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.Application\\obj\\",
+      "outputPath": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\madoh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1133,11 +1133,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.DAL\\GogoLibrary.DAL.csproj": {
-              "projectPath": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.DAL\\GogoLibrary.DAL.csproj"
+            "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.DAL\\GogoLibrary.DAL.csproj": {
+              "projectPath": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.DAL\\GogoLibrary.DAL.csproj"
             },
-            "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.Domain\\GogoLibrary.Domain.csproj": {
-              "projectPath": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.Domain\\GogoLibrary.Domain.csproj"
+            "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.Domain\\GogoLibrary.Domain.csproj": {
+              "projectPath": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.Domain\\GogoLibrary.Domain.csproj"
             }
           }
         }
