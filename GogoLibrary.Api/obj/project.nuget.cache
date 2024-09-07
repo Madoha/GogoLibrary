@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fpt3mh8r09g=",
+  "dgSpecHash": "9mF12pE+se8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.Api\\GogoLibrary.Api.csproj",
+  "projectFilePath": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.Api\\GogoLibrary.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\madoh\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\madoh\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",

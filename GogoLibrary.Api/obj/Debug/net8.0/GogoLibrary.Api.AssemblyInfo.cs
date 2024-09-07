@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GogoLibrary.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4eee2d1993c634e313203e2afed1cfdc7ac5bea9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9765c664995bffde0aab7f29d9b7fc3b0145dd8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("GogoLibrary.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GogoLibrary.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
