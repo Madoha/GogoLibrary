@@ -1,0 +1,17 @@
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\bin\Debug\net8.0\GogoLibrary.Application.deps.json
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\bin\Debug\net8.0\GogoLibrary.Application.dll
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\bin\Debug\net8.0\GogoLibrary.Application.pdb
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\bin\Debug\net8.0\GogoLibrary.Domain.dll
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\bin\Debug\net8.0\GogoLibrary.Domain.pdb
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\obj\Debug\net8.0\GogoLibrary.Application.csproj.AssemblyReference.cache
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\obj\Debug\net8.0\GogoLibrary.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\obj\Debug\net8.0\GogoLibrary.Application.AssemblyInfoInputs.cache
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\obj\Debug\net8.0\GogoLibrary.Application.AssemblyInfo.cs
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\obj\Debug\net8.0\GogoLibrary.Application.csproj.CoreCompileInputs.cache
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\obj\Debug\net8.0\GogoLibr.2646C896.Up2Date
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\obj\Debug\net8.0\GogoLibrary.Application.dll
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\obj\Debug\net8.0\refint\GogoLibrary.Application.dll
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\obj\Debug\net8.0\GogoLibrary.Application.pdb
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\obj\Debug\net8.0\ref\GogoLibrary.Application.dll
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\bin\Debug\net8.0\GogoLibrary.DAL.dll
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Application\bin\Debug\net8.0\GogoLibrary.DAL.pdb

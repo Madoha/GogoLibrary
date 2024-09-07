@@ -1,0 +1,15 @@
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\bin\Debug\net8.0\GogoLibrary.AI.deps.json
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\bin\Debug\net8.0\GogoLibrary.AI.dll
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\bin\Debug\net8.0\GogoLibrary.AI.pdb
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\bin\Debug\net8.0\GogoLibrary.Domain.dll
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\bin\Debug\net8.0\GogoLibrary.Domain.pdb
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLibrary.AI.csproj.AssemblyReference.cache
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLibrary.AI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLibrary.AI.AssemblyInfoInputs.cache
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLibrary.AI.AssemblyInfo.cs
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLibrary.AI.csproj.CoreCompileInputs.cache
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLibr.AE792DC6.Up2Date
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLibrary.AI.dll
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\refint\GogoLibrary.AI.dll
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLibrary.AI.pdb
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\ref\GogoLibrary.AI.dll

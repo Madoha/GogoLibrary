@@ -1,0 +1,17 @@
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\bin\Debug\net8.0\GogoLibrary.DAL.deps.json
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\bin\Debug\net8.0\GogoLibrary.DAL.runtimeconfig.json
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\bin\Debug\net8.0\GogoLibrary.DAL.dll
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\bin\Debug\net8.0\GogoLibrary.DAL.pdb
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\bin\Debug\net8.0\GogoLibrary.Domain.dll
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\bin\Debug\net8.0\GogoLibrary.Domain.pdb
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.csproj.AssemblyReference.cache
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.AssemblyInfoInputs.cache
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.AssemblyInfo.cs
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.csproj.CoreCompileInputs.cache
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibr.95314082.Up2Date
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.dll
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\refint\GogoLibrary.DAL.dll
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.pdb
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.genruntimeconfig.cache
+C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\ref\GogoLibrary.DAL.dll

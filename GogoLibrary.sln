@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{FCA6B08E-9813-420F-B917-3BB71EF8C0A1}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		.dockerignore = .dockerignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GogoLibrary.Api", "GogoLibrary.Api\GogoLibrary.Api.csproj", "{2A2A225B-C62A-4C7D-AFBF-1477A071734F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{2F079441-30B0-4475-9F1A-05AD4EC1B7C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E5BA3EC8-50DB-4F2C-854B-54EC2942283F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GogoLibrary.DAL", "GogoLibrary.DAL\GogoLibrary.DAL.csproj", "{F71DC89E-2554-4EB8-BCB2-5E024ED82987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GogoLibrary.Domain", "GogoLibrary.Domain\GogoLibrary.Domain.csproj", "{24663D48-5E1B-4660-95F4-F2D68C4F0998}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GogoLibrary.Application", "GogoLibrary.Application\GogoLibrary.Application.csproj", "{FF7AF35E-A88A-403E-BD53-0E257C50E915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GogoLibrary.AI", "GogoLibrary.AI\GogoLibrary.AI.csproj", "{AEDBAC58-FC7C-465E-8D85-6648364C00EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CDAE42D-BCA9-465F-9815-0FD12A05E497}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A2A225B-C62A-4C7D-AFBF-1477A071734F} = {FCA6B08E-9813-420F-B917-3BB71EF8C0A1}
+		{F71DC89E-2554-4EB8-BCB2-5E024ED82987} = {E5BA3EC8-50DB-4F2C-854B-54EC2942283F}
+		{24663D48-5E1B-4660-95F4-F2D68C4F0998} = {2F079441-30B0-4475-9F1A-05AD4EC1B7C2}
+		{FF7AF35E-A88A-403E-BD53-0E257C50E915} = {2F079441-30B0-4475-9F1A-05AD4EC1B7C2}
+		{AEDBAC58-FC7C-465E-8D85-6648364C00EE} = {E5BA3EC8-50DB-4F2C-854B-54EC2942283F}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A2A225B-C62A-4C7D-AFBF-1477A071734F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A2A225B-C62A-4C7D-AFBF-1477A071734F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A2A225B-C62A-4C7D-AFBF-1477A071734F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A2A225B-C62A-4C7D-AFBF-1477A071734F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71DC89E-2554-4EB8-BCB2-5E024ED82987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71DC89E-2554-4EB8-BCB2-5E024ED82987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71DC89E-2554-4EB8-BCB2-5E024ED82987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71DC89E-2554-4EB8-BCB2-5E024ED82987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24663D48-5E1B-4660-95F4-F2D68C4F0998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24663D48-5E1B-4660-95F4-F2D68C4F0998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24663D48-5E1B-4660-95F4-F2D68C4F0998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24663D48-5E1B-4660-95F4-F2D68C4F0998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7AF35E-A88A-403E-BD53-0E257C50E915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7AF35E-A88A-403E-BD53-0E257C50E915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7AF35E-A88A-403E-BD53-0E257C50E915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7AF35E-A88A-403E-BD53-0E257C50E915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEDBAC58-FC7C-465E-8D85-6648364C00EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDBAC58-FC7C-465E-8D85-6648364C00EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDBAC58-FC7C-465E-8D85-6648364C00EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDBAC58-FC7C-465E-8D85-6648364C00EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
