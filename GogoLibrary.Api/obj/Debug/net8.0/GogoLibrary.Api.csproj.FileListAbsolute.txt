@@ -130,3 +130,4 @@ C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.Api\obj\Debug\net8.0\ref\Go
 C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.Api\bin\Debug\net8.0\GogoLibrary.AI.dll
 C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.Api\bin\Debug\net8.0\GogoLibrary.AI.pdb
 C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.Api\bin\Debug\net8.0\CsvHelper.dll
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.Api\obj\Debug\net8.0\GogoLibrary.Api.sourcelink.json

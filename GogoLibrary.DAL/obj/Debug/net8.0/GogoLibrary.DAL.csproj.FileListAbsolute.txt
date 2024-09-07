@@ -15,3 +15,4 @@ C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\refint
 C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.pdb
 C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.genruntimeconfig.cache
 C:\Users\madoh\RiderProjects\GogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\ref\GogoLibrary.DAL.dll
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.DAL\obj\Debug\net8.0\GogoLibrary.DAL.sourcelink.json

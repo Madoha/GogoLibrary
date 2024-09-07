@@ -13,3 +13,4 @@ C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLib
 C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\refint\GogoLibrary.AI.dll
 C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLibrary.AI.pdb
 C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\ref\GogoLibrary.AI.dll
+C:\Users\madoh\RiderProjects\gogoLibrary\GogoLibrary.AI\obj\Debug\net8.0\GogoLibrary.AI.sourcelink.json
