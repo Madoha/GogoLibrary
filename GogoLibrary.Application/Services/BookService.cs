@@ -17,16 +17,19 @@ public class BookService : IBookService
 {
     // private readonly string _csvFilePath = "../database.csv";
     private readonly IBaseRepository<Book> _bookRepository;
+    private readonly IBaseRepository<User> _userRepository;
     private readonly IBookAIService _bookAIService;
     private readonly IMapper _mapper;
     
     public BookService(IBaseRepository<Book> bookRepository, 
         IBookAIService bookAiService, 
-        IMapper mapper)
+        IMapper mapper, 
+        IBaseRepository<User> userRepository)
     {
         _bookRepository = bookRepository;
         _bookAIService = bookAiService;
         _mapper = mapper;
+        _userRepository = userRepository;
     }
 
 //     public async Task<CollectionResult<BookCsv>> GetBooksAsync()
@@ -141,7 +144,7 @@ public class BookService : IBookService
                 query = query.Where(b => EF.Functions.Like(b.Publisher, publisher));
             }
 
-            var books = await query.ToListAsync();
+            var books = await query.Include(x => x.RecommendedBy).ToListAsync();
             var result = _mapper.Map<IEnumerable<SearchBookResultDto>>(books);
             var count = books.Count();
 
@@ -160,6 +163,36 @@ public class BookService : IBookService
             };
         }
     }
+
+    public async Task<BaseResult> AddBookAsync(CreateBookDto dto, string userName)
+    {
+        var book = await _bookRepository.GetAll().Where(w => w.Title == dto.Title).FirstOrDefaultAsync();
+        var user = await _userRepository.GetAll().Where(w => w.UserName == userName).FirstOrDefaultAsync();
+        if (book != null)
+        {
+            return new BaseResult()
+            {
+                ErrorMessage = "Book already exists!",
+                ErrorCode = (int)HttpStatusCode.Conflict
+            };
+        }
+        
+        book = _mapper.Map<Book>(dto);
+        book.CreatedBy = user.Id;
+
+        try
+        {
+            await _bookRepository.CreateAsync(book);
+            await _bookRepository.SaveChangesAsync();
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Internal Server Error", ex);
+        }
+
+        return new BaseResult();
+    }
+
 
     // public async Task<BaseResult> AddToOwnDbAsync(IEnumerable<BookCsv> books)
     // {

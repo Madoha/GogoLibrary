@@ -19,4 +19,6 @@ public class Book : IAuditable
     public DateTime? ModifiedAt { get; set; }
     public long? ModifiedBy { get; set; }
     public List<BookComment>? Comments { get; set; }
+    public List<UserFavoriteBook> FavoritedBy { get; set; }
+    public List<UserBookRecommendation> RecommendedBy { get; set; }
 }

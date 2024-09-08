@@ -28,8 +28,18 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
                 l => l.HasOne<Book>().WithMany().HasForeignKey(x => x.BookId),
                 l => l.HasOne<User>().WithMany().HasForeignKey(x => x.UserId));
         
+        builder.HasMany(x => x.Clubs)
+            .WithMany(x => x.Users)
+            .UsingEntity<UserClub>(
+                l => l.HasOne<Club>().WithMany().HasForeignKey(x => x.ClubId),
+                l => l.HasOne<User>().WithMany().HasForeignKey(x => x.UserId));
+        
         builder.HasMany(x => x.Comments)
             .WithOne(x => x.User)
             .HasForeignKey(x => x.UserId);
+        
+        // builder.HasMany(x => x.FavoriteBooks)
+        //     .WithOne(x => x.User)
+        //     .HasForeignKey(x => x.UserId);
     }
 }

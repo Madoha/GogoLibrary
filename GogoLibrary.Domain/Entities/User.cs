@@ -19,4 +19,7 @@ public class User : IAuditable
     public List<Role> Roles { get; set; }
     public List<Book>? Books { get; set; }
     public List<BookComment>? Comments { get; set; }
+    public List<UserFavoriteBook>? FavoriteBooks { get; set; }
+    public List<Club> Clubs { get; set; }
+    public List<UserBookRecommendation>? UserBookRecommendations { get; set; }
 }

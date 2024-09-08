@@ -27,9 +27,12 @@ public static class DependencyInjection
     private static void InitRepositories(this IServiceCollection services)
     {
         services.AddScoped<IUnitOfWork, UnitOfWork>();
-        
+        services.AddScoped<IBaseRepository<UserBookRecommendation>, BaseRepository<UserBookRecommendation>>();
+        services.AddScoped<IBaseRepository<Club>, BaseRepository<Club>>();
+        services.AddScoped<IBaseRepository<UserClub>, BaseRepository<UserClub>>();
         services.AddScoped<IBaseRepository<BookComment>, BaseRepository<BookComment>>();
         services.AddScoped<IBaseRepository<UserBook>, BaseRepository<UserBook>>();
+        services.AddScoped<IBaseRepository<UserFavoriteBook>, BaseRepository<UserFavoriteBook>>();
         services.AddScoped<IBaseRepository<Book>, BaseRepository<Book>>();
         services.AddScoped<IBaseRepository<User>, BaseRepository<User>>();
         services.AddScoped<IBaseRepository<Role>, BaseRepository<Role>>();

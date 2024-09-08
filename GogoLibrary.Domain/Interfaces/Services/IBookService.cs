@@ -9,5 +9,7 @@ public interface IBookService
     // Task<CollectionResult<BookCsv>> GetBooksAsync();
     // Task<BaseResult<BookCsv>> SearchBooksAsync(SearchBookDto searchBookDto);
     Task<CollectionResult<SearchBookResultDto>> SearchBooksInDbAsync(SearchBookDto dto);
+
+    Task<BaseResult> AddBookAsync(CreateBookDto dto, string userName);
     // Task<BaseResult> AddToOwnDbAsync(IEnumerable<BookCsv> books);
 }

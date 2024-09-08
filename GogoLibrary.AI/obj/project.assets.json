@@ -994,11 +994,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.AI\\GogoLibrary.AI.csproj",
+      "projectUniqueName": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.AI\\GogoLibrary.AI.csproj",
       "projectName": "GogoLibrary.AI",
-      "projectPath": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.AI\\GogoLibrary.AI.csproj",
+      "projectPath": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.AI\\GogoLibrary.AI.csproj",
       "packagesPath": "C:\\Users\\madoh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.AI\\obj\\",
+      "outputPath": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.AI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\madoh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1013,8 +1013,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.Domain\\GogoLibrary.Domain.csproj": {
-              "projectPath": "C:\\Users\\madoh\\RiderProjects\\GogoLibrary\\GogoLibrary.Domain\\GogoLibrary.Domain.csproj"
+            "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.Domain\\GogoLibrary.Domain.csproj": {
+              "projectPath": "C:\\Users\\madoh\\RiderProjects\\gogoLibrary\\GogoLibrary.Domain\\GogoLibrary.Domain.csproj"
             }
           }
         }

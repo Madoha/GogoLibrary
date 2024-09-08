@@ -48,4 +48,14 @@ public class BookController : ControllerBase
             return Ok(response);
         return BadRequest(response);
     }
+
+    [HttpPost("add-book")]
+    public async Task<ActionResult<BaseResult>> AddBook([FromBody] CreateBookDto dto)
+    {
+        var userName = User.Identity.Name;
+        var response = await _bookService.AddBookAsync(dto, userName);
+        if (response.IsSuccess)
+            return Ok(response);
+        return BadRequest(response);
+    }
 }

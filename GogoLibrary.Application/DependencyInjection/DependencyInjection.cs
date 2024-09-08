@@ -18,6 +18,8 @@ public static class DependencyInjection
 
     private static void InitServices(this IServiceCollection services)
     {
+        services.AddScoped<IClubService, ClubService>();
+        services.AddScoped<IUserService, UserService>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<ITokenService, TokenService>();
         services.AddScoped<IBookService, BookService>();

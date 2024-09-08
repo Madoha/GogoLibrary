@@ -3,6 +3,7 @@ using System;
 using GogoLibrary.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GogoLibrary.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240908080254_UserFavoritesAndRecommendations")]
+    partial class UserFavoritesAndRecommendations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -111,6 +114,43 @@ namespace GogoLibrary.DAL.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("BookComment");
+                });
+
+            modelBuilder.Entity("GogoLibrary.Domain.Entities.Club", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("BookTitle")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<long?>("CreatedBy")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("ModifiedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<long?>("ModifiedBy")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Club");
                 });
 
             modelBuilder.Entity("GogoLibrary.Domain.Entities.Role", b =>
@@ -218,6 +258,51 @@ namespace GogoLibrary.DAL.Migrations
                     b.ToTable("UserBook");
                 });
 
+            modelBuilder.Entity("GogoLibrary.Domain.Entities.UserBookRecommendation", b =>
+                {
+                    b.Property<long>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("BookId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("UserId", "BookId");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("UserBookRecommendation");
+                });
+
+            modelBuilder.Entity("GogoLibrary.Domain.Entities.UserClub", b =>
+                {
+                    b.Property<long>("ClubId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("ClubId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserClub");
+                });
+
+            modelBuilder.Entity("GogoLibrary.Domain.Entities.UserFavoriteBook", b =>
+                {
+                    b.Property<long>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("BookId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("UserId", "BookId");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("UserFavoriteBook");
+                });
+
             modelBuilder.Entity("GogoLibrary.Domain.Entities.UserRole", b =>
                 {
                     b.Property<long>("RoleId")
@@ -293,6 +378,59 @@ namespace GogoLibrary.DAL.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("GogoLibrary.Domain.Entities.UserBookRecommendation", b =>
+                {
+                    b.HasOne("GogoLibrary.Domain.Entities.Book", "Book")
+                        .WithMany("RecommendedBy")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GogoLibrary.Domain.Entities.User", "User")
+                        .WithMany("UserBookRecommendations")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("GogoLibrary.Domain.Entities.UserClub", b =>
+                {
+                    b.HasOne("GogoLibrary.Domain.Entities.Club", null)
+                        .WithMany()
+                        .HasForeignKey("ClubId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GogoLibrary.Domain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("GogoLibrary.Domain.Entities.UserFavoriteBook", b =>
+                {
+                    b.HasOne("GogoLibrary.Domain.Entities.Book", "Book")
+                        .WithMany("FavoritedBy")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GogoLibrary.Domain.Entities.User", "User")
+                        .WithMany("FavoriteBooks")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("GogoLibrary.Domain.Entities.UserRole", b =>
                 {
                     b.HasOne("GogoLibrary.Domain.Entities.Role", null)
@@ -322,11 +460,19 @@ namespace GogoLibrary.DAL.Migrations
             modelBuilder.Entity("GogoLibrary.Domain.Entities.Book", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("FavoritedBy");
+
+                    b.Navigation("RecommendedBy");
                 });
 
             modelBuilder.Entity("GogoLibrary.Domain.Entities.User", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("FavoriteBooks");
+
+                    b.Navigation("UserBookRecommendations");
 
                     b.Navigation("UserToken")
                         .IsRequired();
