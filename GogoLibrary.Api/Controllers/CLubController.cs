@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GogoLibrary.Api.Controllers;
 
 [ApiController]
-[Authorize]
+// [Authorize]
 [Route("api/[controller]")]
 public class CLubController : ControllerBase
 {
@@ -48,6 +48,14 @@ public class CLubController : ControllerBase
     public async Task<ActionResult<CollectionResult<ClubDto>>> GetAllClubs()
     {
         var response = await _clubService.GetAllClubsAsync();
+        if (response.IsSuccess) return Ok(response);
+        return BadRequest(response);
+    }
+    
+    [HttpGet("get-club-details")]
+    public async Task<ActionResult<CollectionResult<ClubDto>>> GetClubDetails([FromQuery] long clubId)
+    {
+        var response = await _clubService.GetClubDetailsAsync(clubId);
         if (response.IsSuccess) return Ok(response);
         return BadRequest(response);
     }

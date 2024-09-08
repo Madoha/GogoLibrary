@@ -119,6 +119,15 @@ public class ClubService : IClubService
         return new BaseResult();
     }
 
+    public async Task<BaseResult<ClubDto>> GetClubDetailsAsync(long clubId)
+    {
+        var club = await _clubRepository.GetAll().Where(c => c.Id == clubId).FirstOrDefaultAsync();
+        return new BaseResult<ClubDto>()
+        {
+            Data = _mapper.Map<ClubDto>(club),
+        };
+    }
+
     private async Task<BaseResult<User>> GetUserByNameAsync(string userName)
     {
         var user = await _userRepository.GetAll().Where(x => x.UserName == userName).FirstOrDefaultAsync();

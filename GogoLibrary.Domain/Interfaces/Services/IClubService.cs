@@ -9,4 +9,5 @@ public interface IClubService
     Task<BaseResult> LeaveFromClubAsync(long clubId, string userName);
     Task<CollectionResult<ClubDto>> GetAllClubsAsync();
     Task<BaseResult> CreateClubAsync(CreateClubDto dto);
+    Task<BaseResult<ClubDto>> GetClubDetailsAsync(long clubId);
 }
