@@ -6,13 +6,15 @@ import NotFound from './NotFound';
 import Layout from './Layout';
 import Register from '../auth/register/Register'
 import Login from '../auth/login/Login'
-import Search from './search/Search'
 import Comment from '../pages/Comment'
 import Profile from '../auth/profile/Profile'
 import SearchByTitle from './search/SearchByTitle';
 import SearchByDescription from './search/SearchByDesc'
+import Maps from './Maps'
+import Game from './game/MapComponent'
+import AddBook from './shop/AddBook'
 import Club from './club/ClubList'
-import ClubDetails from './club/ClubDetails';
+import ClubDetails from './club/ClubDetails'
 
 
 function AppContent() {
@@ -32,8 +34,12 @@ function AppContent() {
                     <Route path="/profile" element={<Profile />} /> 
                     <Route path="/search1" element={<SearchByTitle />} />
                     <Route path="/search2" element={<SearchByDescription />} />
+                    <Route path="/map" element={<Maps />} />
+                    <Route path="/game" element={<Game />} />
+                    <Route path="/add" element={<AddBook />} />
                     <Route path="/club" element={<Club />} />
                     <Route path="/club/:id" element={<ClubDetails />} />
+                    <Route path="/comment" element={<Comment />} />
                     <Route path="/comment" element={<Comment />} />
                 </Route>
             </Routes>

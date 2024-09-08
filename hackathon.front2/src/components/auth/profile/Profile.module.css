@@ -11,7 +11,18 @@
     font-size: 32px;
     margin-bottom: 20px;
   }
-  
+
+  .prof {
+    list-style-type: decimal-leading-zero;
+  } 
+  .booksss {
+    padding-top: 30px;
+  }
+
+  .profl {
+
+  }
+
   .profileTabs {
     display: flex;
     margin-bottom: 20px;

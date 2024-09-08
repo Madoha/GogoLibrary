@@ -3,18 +3,18 @@ const BlogSection = () => {
     const blogs = [
         {
             id: 1,
-            title: 'Флаги, знамена, полезная информация, часть I',
-            image: 'src/assets/blogimg1.png',
+            title: 'Ура, у нас появилась своя онлайн платформа, спасибо 11 команде',
+            image: 'https://avatars.mds.yandex.net/i?id=6d0affec8c265942739a7c21a695f4b7231fcc3efe8aba2d-5282144-images-thumbs&n=13',
         },
         {
             id: 2,
-            title: 'Флаги, знамена, полезная информация, часть I',
-            image: 'src/assets/blogimg2.png',
+            title: 'Наша команда расширается, у нас новые работники которые горят желанием работать',
+            image: 'https://avatars.mds.yandex.net/i?id=9d2d872dbaaecd4c9d46b1766b02553bbd20583b-4357367-images-thumbs&n=13',
         },
         {
             id: 3,
-            title: 'Флаги, знамена, полезная информация, часть I',
-            image: 'src/assets/blogimg3.png',
+            title: 'Мы открыты, ждем вас всех у нас в библиотеке Н.В. Гоголя. г. Караганда',
+            image: 'https://avatars.mds.yandex.net/i?id=7ce50f03ff6cc48464b52fb609a24f74a5a7efc0-10148308-images-thumbs&n=13',
         },
     ];
 

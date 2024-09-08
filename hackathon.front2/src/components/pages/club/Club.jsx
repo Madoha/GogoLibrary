@@ -5,6 +5,7 @@ const Club = ({ club }) => {
   const navigate = useNavigate();
 
   const handleJoinClick = async () => {
+    
     try {
       const response = await axios.get(`http://localhost:8080/api/Club/join-to-club?clubId=${club.id}`);
       const data = response.data;

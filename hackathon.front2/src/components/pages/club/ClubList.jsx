@@ -14,6 +14,18 @@ const ClubsList = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  const loadToken = () => {
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    }
+  };
+
+  useEffect(() => {
+    loadToken();
+  }, []);
+
+
   useEffect(() => {
     const fetchClubs = async () => {
       try {

@@ -46,7 +46,7 @@ const ClubDetails = () => {
       const data = response.data;
       if (data.isSuccess) {
         alert('Вы вышли из клуба!');
-        navigate('/clubs');
+        navigate('/club');
       } else {
         throw new Error(data.errorMessage || 'Error leaving club');
       }

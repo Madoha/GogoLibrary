@@ -1,0 +1,110 @@
+
+.map-container {
+    text-align: center;
+    
+  }
+  
+  .map {
+    
+    background-size: -50%;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: red no-repeat center center;
+    background-size: cover;
+    transform-origin: top left;
+  }
+  
+  .tile {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .wall {
+    background-color:#b08246;
+  }
+  
+  .book {
+    background-image: url('https://cdn.culture.ru/images/a0e70f0b-2ace-5f45-9fd7-b038ea2d3a56'); /* Изображение артефакта */
+    background-size: cover;
+  }
+  
+  .pen {
+    background-image: url('https://avatars.mds.yandex.net/i?id=86a791deae7711a5487ae0b6edaac3ff_l-4404146-images-thumbs&n=13'); /* Изображение еды */
+    background-size: cover;
+  }
+  .back{
+    background-image: url('https://keramika-russia.ru/upload/resize_cache/webp/iblock/d0c/d0ce5117824e1a02cbe1db89ff0b6924.webp'); 
+  }
+  
+.character img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .character {
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .reward-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  
+  .reward-modal h3 {
+    margin-top: 0;
+  }
+  
+  .reward-modal button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .task-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .task-popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .task-popup h2 {
+    margin-top: 0;
+  }
+  
+  .task-popup button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-popup button:hover {
+    background: #0056b3;
+  }
+  

@@ -4,11 +4,11 @@ const ShopButton = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/shop');
+    window.location.href = 'https://2gis.kz/karaganda/firm/11822477302874725';
   };
 
   return (
-    <button className='buy-sec-btn' onClick={handleNavigate}>перейти в магазин</button>
+    <button className='buy-sec-btn' onClick={handleNavigate}>Наше местоположения</button>
   );
 };
 

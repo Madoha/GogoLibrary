@@ -1,14 +1,14 @@
 import { Component } from 'react'
 import gogol from '../../assets/gogol.png'
 import histpic from '../../assets/histpic.png'
-import Search from './search/Search'
 import BuyImg from '../../assets/buysec.png'
-import ShopButton from './shop/ShopBtn'
 import BookSection from './book/BookSection'
 import Blog from './blog/Blog'
 import SearchByTitle from './search/SearchByTitle'
 import SearchByDescription from './search/SearchByDesc'
- 
+import Add from './shop/PaddBook'
+import ShopButton from './shop/ShopBtn'
+
 
 export class Home extends Component {
     render() {
@@ -72,16 +72,15 @@ export class Home extends Component {
                             </div>
                             <div className='buy-mid'>
                                 <div className='buy-img'>
-                                    <img src={BuyImg} alt='' />
+                                    <img src="https://avatars.mds.yandex.net/i?id=c6f210f1711941ae374c5f3535bba60e-3738263-images-thumbs&n=13" alt='' />
                                 </div>
                                 <div className='buy-info'>
-                                    <h1>Шри Намамрита:<br />
-                                        нектар святого имени</h1>
-                                    <p className='buy-p'>Его божественная Милость<br />
-                                        А. Ч. Бхактиведанта Свами Прабхупада</p>
+                                    <h1>Библиотека:<br />
+                                    им.Н.В.Гоголя</h1>
+                                    <p className='buy-p'>Карагандинская областная универсальная научная библиотека им.Н.В.Гоголя</p>
                                     <div className='buy-info-sec'>
-                                        <ShopButton />
-                                        <div className='buy-price'>450 р.</div>
+                                        <Add />
+                                        {/* <div className='buy-price'>450 р.</div> */}
                                     </div>
                                 </div>
                             </div>
